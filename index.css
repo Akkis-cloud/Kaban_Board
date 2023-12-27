@@ -1,0 +1,51 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    background-color: #4b4b4b;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0px;
+    /* box-sizing: border-box; */
+}
+.priority-filter{
+    display: flex;
+    flex-direction: row;
+    background-color: #3d3d3d;
+    height: 60px ;
+    margin-left: 50px;
+}
+.quick-action{
+    display: flex;
+    flex-direction: row;
+    background-color: #3d3d3d;
+    height: 60px;
+    margin-left: 50px;
+}
+.priority-filter .box{
+height: 40px;
+width: 60px;
+margin: 10px;
+}
+.priority-filter .box.p1{
+    background-color: pink;
+}
+.priority-filter .box.p2{
+    background-color: seagreen;
+}
+.priority-filter .box.p3{
+    background-color: cornflowerblue;
+}
+.priority-filter .box.p4{
+    background-color: black;
+}
+.quick-action .icon{
+    font-size: 40px;
+    padding: 5px;
+}
+.quick-action .icon:hover{
+    background-color: greenyellow;
+}
+
