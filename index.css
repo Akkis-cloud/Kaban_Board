@@ -8,7 +8,7 @@ header{
     display: flex;
     flex-direction: row;
     padding: 10px 0px;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
 }
 .priority-filter{
     display: flex;
@@ -25,9 +25,14 @@ header{
     margin-left: 50px;
 }
 .priority-filter .box{
+    cursor: pointer;
 height: 40px;
 width: 60px;
 margin: 10px;
+box-sizing: border-box;
+}
+.priority-filter .box:hover{
+    border: 2px solid #ffffff;
 }
 .priority-filter .box.p1{
     background-color: pink;
@@ -42,8 +47,12 @@ margin: 10px;
     background-color: black;
 }
 .quick-action .icon{
+    cursor: pointer;
     font-size: 40px;
-    padding: 5px;
+    padding: 0px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .quick-action .icon:hover{
     background-color: greenyellow;
