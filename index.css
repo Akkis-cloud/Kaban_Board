@@ -48,7 +48,7 @@ box-sizing: border-box;
 }
 .quick-action .icon{
     cursor: pointer;
-    font-size: 40px;
+    font-size: 30px;
     padding: 0px 10px;
     display: flex;
     justify-content: center;
@@ -56,5 +56,51 @@ box-sizing: border-box;
 }
 .quick-action .icon:hover{
     background-color: greenyellow;
+}
+.quick-action .icon.add{
+    color: white;
+}
+.quick-action .icon.delete{
+    color: red;
+}
+main h1{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 10px 0px;
+}
+.modal{
+    width: 50vw;
+    height: 50vh;
+    background-color: #dfe4ea;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    display: flex;
+}
+.modal .left-section{
+    width: calc(100%-80px);
+    display: flex;
+    height: 100%;
+}
+.modal .right-section{
+    width: 80px;
+    display: flex;
+    height: 100%;
+    background-color: #4b4b4b;
+}
+
+.modal .left-section textarea{
+    width: 100%;
+    background-color:transparent;
+    padding: 10px;
+}
+.modal .priority-filter{
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    margin-left: 0px;
+    box-sizing: border-box;
 }
 
