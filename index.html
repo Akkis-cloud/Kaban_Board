@@ -3,6 +3,7 @@
 
         <link rel="stylesheet" href="/index.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <script src="/index.js" defer></script>
     </head>
     <body>
         <header>
@@ -25,14 +26,16 @@
                         <textarea placeholder="Enter Your Task"></textarea>
                     </div>
                     <div class="right-section">
-                        <div class="priority-filter">
-                            <div class="box p1"></div>
-                            <div class="box p2"></div>
-                            <div class="box p3"></div>
-                            <div class="box p4"></div>
+                        <div class="close">
+                            <i class="fa-sharp fa-solid fa-xmark"></i>
                         </div>
-                    </div>
-                </div>
+                        <div class="priority-filter">
+                            <div class="box p1" data-id="1"></div>
+                            <div class="box p2" data-id="2"></div>
+                            <div class="box p3" data-id="3"></div>
+                            <div class="box p4 selected" data-id="4"></div>
+                        </div>
+                    </div></div>
             </section>
         </main>
     </body>

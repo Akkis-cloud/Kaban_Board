@@ -80,11 +80,13 @@ main h1{
     display: flex;
 }
 .modal .left-section{
-    width: calc(100%-80px);
+    width: 100%;
     display: flex;
     height: 100%;
 }
 .modal .right-section{
+    position: relative;
+    /* margin-right: 0px; */
     width: 80px;
     display: flex;
     height: 100%;
@@ -97,10 +99,30 @@ main h1{
     padding: 10px;
 }
 .modal .priority-filter{
+    margin-left: 0px;
     height: 100%;
     width: 100%;
     flex-direction: column;
-    margin-left: 0px;
+    /* margin-left: 0px; */
     box-sizing: border-box;
+}
+.modal .priority-filter .box.selected{
+    border: 1px solid #ffffff;
+}
+.modal .right-section .close{
+    position: absolute;
+    right: -16px;
+    top: -18px;
+    color: red;
+    font-size: 17px;
+    background-color: rgba(180,176,176,0.8);
+    border-radius: 50%;
+    padding: 4px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
+.hide{
+    display: none;
 }
 
