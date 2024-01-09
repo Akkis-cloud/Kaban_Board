@@ -4,24 +4,26 @@
         <link rel="stylesheet" href="/index.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
         <script src="/index.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/short-unique-id@latest/dist/short-unique-id.min.js"></script>
     </head>
     <body>
         <header>
             <div class="priority-filter">
-                <div class="box p1"></div>
-                <div class="box p2"></div>
-                <div class="box p3"></div>
-                <div class="box p4"></div>
+                <div class="box p1" id="p1"></div>
+                <div class="box p2" id="p2"></div>
+                <div class="box p3" id="p3"></div>
+                <div class="box p4" id="p4"></div>
             </div>
             <div class="quick-action">
                 <div class="icon add"><i class="fa-solid fa-plus"></i></div>
                 <div class="icon delete"><i class="fa-sharp fa-solid fa-xmark"></i></div>
             </div>
+            <button class="clear-filter">Clear</button>
         </header>
         <main>
             <section>
                 <h1>Kanban Board</h1>
-                <div class="modal">
+                <div class="modal hide">
                     <div class="left-section">
                         <textarea placeholder="Enter Your Task"></textarea>
                     </div>
@@ -35,7 +37,11 @@
                             <div class="box p3" data-id="3"></div>
                             <div class="box p4 selected" data-id="4"></div>
                         </div>
-                    </div></div>
+                    </div>
+                </div>
+                <div class="ticket-section">
+                    
+                </div>
             </section>
         </main>
     </body>
