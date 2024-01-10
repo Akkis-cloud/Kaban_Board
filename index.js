@@ -161,7 +161,7 @@ function updateTaskDescription(id,updatedDescription) {
 listTickets(tasks); 
 
 ticketSectionRef.addEventListener('click',(ev)=>{
-    if([...ev.target.classList].includes('fa-lock'))
+    if([...ev.target.classList].includes('fa-solid'))
     {
         const currentTicketContainerRef=ev.target.closest('.ticket-container');
         //bubbling in which going up to look class ticket-container
